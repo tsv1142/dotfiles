@@ -55,6 +55,11 @@ set statusline=%<%f%m\ %=\ line:\ %l\/%L\ \|\ %{''.(&fenc!=''?&fenc:&enc).''}\ \
 " Always show statusline:
 set laststatus=2
 
+" Set internal files location
+set backupdir=~/.vim/backup//,/tmp//
+set directory=~/.vim/swp//,/tmp//
+set undodir=~/.vim/undo//,/tmp//
+
 " Unmap arrow keys:
 no <left> <Nop>
 no <down> <Nop>
