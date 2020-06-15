@@ -76,6 +76,11 @@ ino <down> <Nop>
 ino <up> <Nop>
 ino <right> <Nop>
 
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
 " Relative line numbers in focused normal mode:
 set number relativenumber
 
@@ -84,3 +89,9 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+nnoremap ff :g/\<function\><CR>:noh<CR>
+nnoremap \\ :noh<CR>
+nnoremap \l :!php -l %<CR>
+
+let g:php_syntax_extensions_disabled=[]
