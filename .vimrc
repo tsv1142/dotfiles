@@ -1,5 +1,12 @@
-" Set pathogen:
-execute pathogen#infect()
+" Setup Plug https://github.com/junegunn/vim-plug:
+call plug#begin()
+Plug 'StanAngeloff/php.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'preservim/nerdtree'
+Plug '2072/PHP-Indenting-for-VIm'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'vimwiki/vimwiki'
+call plug#end()
 
 " Syntax higlighting, try with \"on\" if below fails:
 syntax enable
