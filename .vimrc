@@ -97,7 +97,7 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-nnoremap ff :g/\<function\><CR>:noh<CR>
+nnoremap ff :g/\v(public\|protected\|private)\s(static\s\|final\s)*function<CR>:noh<CR>
 nnoremap \\ :noh<CR>
 nnoremap \l :!php -l %<CR>
 
